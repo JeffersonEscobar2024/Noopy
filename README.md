@@ -1,2 +1,2 @@
 # Snoopy
-El equipo con sorpresas hasta el ultimo momento
+El equipo con sorpresas hasta el ultimo momento :)
