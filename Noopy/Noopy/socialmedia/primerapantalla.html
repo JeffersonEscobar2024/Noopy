@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noopy - Bienvenido</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            color: white;
+        }
+
+        .highlight {
+            color: #ffda45; 
+        }
+
+        .texto {
+            color: white
+        }
+
+        .p{
+            color: white;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: black;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background-color: #ffda45;
+            color: white;
+        }
+
+        .welcome-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            background-color: #ffda45; /* Fondo de colores */
+        }
+
+        .welcome-message {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .welcome-message h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .welcome-message p {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Logo y botones-->
+        <header class="header">
+            <div class="logo" id="logo">
+                No<span class="">o</span>py
+            </div>
+            
+            <script>
+                // Cambia el color aleatoriamente
+                const logo = document.getElementById('logo');
+                const colors = ['#FFFFFF', '#FFDA45', '#024670', '#FF4500', '#000000']; // Lista de colores
+            
+                setInterval(() => {
+                    // Selecciona un color aleatorio de la lista
+                    const randomIndex = Math.floor(Math.random() * colors.length);
+                    logo.style.color = colors[randomIndex];
+                }, 2000); // Cambia el color cada 2000 ms (2 segundos)
+            </script>
+            
+            <div class="buttons">
+                <button class="btn" onclick="registrarse()">Registrarse</button>
+                <button class="btn" onclick="iniciar()">Iniciar</button>
+            </div>
+                    </header>
+
+        <!-- Mensaje de bienvenida -->
+        <section class="welcome-section">
+            <div class="welcome-message">
+                <h1 class="texto">Bienvenido a No<span class="highlight">o</span>py</h1>
+                <p class="p">Conéctate y comparte momentos con amigos de todo el mundo</p>
+            </div>
+           
+
+        </section>
+    </div>
+    <div>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/219EOMEOMLo?autoplay=1&loop=1&playlist=219EOMEOMLo&mute=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+        </iframe>
+    </div>
+        
+    <!-- Archivo JS externo -->
+    <script src="primerapantalla.js"></script>
+</body>
+</html>
